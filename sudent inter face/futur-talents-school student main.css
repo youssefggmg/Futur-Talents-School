@@ -1,0 +1,145 @@
+ @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+*{
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:"wdth" 100,"YTLC" 500;
+    margin: 0px;
+}
+
+body{
+    text-align: center;
+}
+
+/* header start */
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2em 0 2em;
+    align-items: center;
+    background-color: #CE0033;
+}
+
+.futur-talents-school{
+    object-fit: none;
+    width: 28em;
+    height: 3em;
+    cursor: pointer;
+}
+
+.logout{
+    border: 1px solid white;
+    margin: 1em 0 1em 0;
+    width: 10%;
+    height: 2em;
+    font-size: 1.5em; 
+    background-color: #504DC1;
+    border-radius: 15px;
+    outline: none;
+}
+
+a{
+    color: #ffffff;
+    text-decoration: none;
+    &:hover {
+        color: #CE0033;
+        transition: all .3s ease-in-out;
+    }
+}
+/* header end */
+/* main section*/
+.title{
+    padding: 3em 0 3em 0;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* table tyling */
+th{
+    width: 15%;
+    background-color: #DADADA ;
+}
+td, th{
+    text-align: center;
+    padding: .6em;
+    border:  3px solid black;
+}
+.no-border{
+    border:  0px;
+    padding: 1em;
+}
+.fa-circle-plus{
+    margin-top: 4em;
+    font-size: 4em !important;
+    margin-top: 1em !important;
+    cursor: pointer;
+}
+
+.fa-solid,.fa-eye{
+    cursor: pointer;
+}
+
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        padding: 1em; /* Adjust padding for smaller screens */
+        width: 98%;
+    }
+
+    .logout {
+        width: 50%;
+        height: 2.5em;
+        font-size: 1.25em;
+    }
+
+    th {
+        width: auto; /* Allow table headers to adjust based on content */
+    }
+
+    .fa-circle-plus {
+        margin-top: 2em;
+    }
+
+    /* Adjust margin for title */
+    .title {
+        padding: 2em 0;
+    }
+
+    .futur-talents-school { 
+        height: 14em;
+        margin-bottom: 1em;
+        object-fit: contain;
+    }
+}
+/* modal of the blockeg showing */
+
+#modal-deff-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 50%;
+    background-color: #D9D9D9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 1.5em;
+    padding: 1em 2em 1em 2em;
+    border-radius: 15px;
+    overflow: hidden;
+}
+#close-modal-deff{
+    align-self:center ;
+    background-color: #504DC1;
+    border: 1px solid;
+    outline: none;
+    border-radius: 25px;
+    width: 5em;
+    font-size: x-large;
+}

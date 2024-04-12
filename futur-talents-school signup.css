@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+*{
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:"wdth" 100,"YTLC" 500;
+}
+/* code to center evry thing  */
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+/* shrink img */
+.futur-talents-school{
+    margin: -13em;
+    width: 50em;
+}
+/* modifi the main section */
+main{
+    background-color: #222222;
+    color: white;
+    border-radius: 15px;
+    text-align: center;
+    width: 40em;
+}
+
+.title{
+    padding: 1em 0 1em 0;
+}
+/* form modifections */
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+form>div{
+    padding: 1em 0 1em 0;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    justify-content: space-around;
+}
+input{
+    width: 50%;
+    border-radius: 25px;
+    height: 3em;
+    padding: 0 2em 0 2em;
+    margin-left: 3.5em;
+    outline: none;
+}
+#error{
+    color: #CE0033;
+}
+label{
+    color: #CE0033;
+}
+#fullname{
+    margin-left: 5em;
+}
+button{
+    border: 1PX solid white;
+    margin: 1em 0 1em 0;
+    width: 20%;
+    height: 2em;
+    font-size: 1.5em; 
+    background-color: #ffffff;
+    border-radius: 15px;
+    outline: none;
+}
+
+a{
+    color: #504DC1;
+    text-decoration: none;
+    &:hover {
+        color: white;
+        transition: all .3s ease-in-out;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+/* Mobile devices */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+/* Mobile devices */
+@media only screen and (max-width: 600px) {
+    html {
+        font-size: 14px;
+    }
+
+    /* Avoid shrinking the image too much on mobile */
+    .futur-talents-school {
+        width: 90%;
+        margin: 0 auto; 
+    }
+
+    main {
+        width: 100%; /* Make the main section full-width on mobile */
+    }
+
+    /* Flex layout for form elements on mobile */
+    form {
+        display: flex;
+        flex-direction: column; /* Stack form elements vertically */
+        align-items: center; /* Center form elements horizontally */
+    }
+    form > div,
+    input,
+    button,
+    label {
+        width: 100%; /* Make form elements full-width on mobile */
+        margin-right: 7px; /* Remove left margin on mobile */
+    }
+
+    button {
+        margin: 1em 0 1em 0;
+        width: 50%;
+        max-width: 200px;
+    }
+}

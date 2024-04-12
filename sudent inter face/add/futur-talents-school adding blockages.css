@@ -1,0 +1,53 @@
+main{
+    padding: 0 15% 0 15% ;
+    margin-bottom: 9em;
+}
+form{
+    background-color: black ;
+    border-radius: 15px;
+    width: 100%;
+    padding: 2em;
+}
+label{
+    display: inline-block;
+    color: #ffffff;
+    width: 20em;
+}
+select , input, textarea {
+    border-radius: 15px;
+    height: 2.6em;
+    width: 20em;
+    margin: 2em 0 2em 0;
+    padding-left: 2em ;
+}
+select{
+    width: 24em;
+}
+textarea{
+    width: 22em;
+    height: 7em;
+}
+input{
+    padding: 0 2em 0 2em;
+}
+.text-area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#error{
+    color: #CE0033;
+}
+
+/* Add media queries for mobile screens */
+@media only screen and (max-width: 600px) {
+    main{
+        padding: 0 10px 0 10px;
+    }
+    label{
+        width: 100%;
+    }
+    .text-area{
+        flex-direction: column;
+    }
+}
