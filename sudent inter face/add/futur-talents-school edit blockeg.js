@@ -27,10 +27,8 @@ let Blockageid = JSON.parse(sessionStorage.getItem("editB"));
 let AllBlockages=JSON.parse(localStorage.getItem("difficulty"));
 //get the current blockage from the database
 let currentBlockage = AllBlockages.find(b => b.difficultyID === Blockageid);
-console.log(currentBlockage)
 // get the current blockage index
 let currentBlockageIndex = AllBlockages.findIndex(b => b.difficultyID === Blockageid);
-console.log(currentBlockageIndex)
 
 
 // display the blockage

@@ -19,7 +19,8 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    padding: 1em; /* Adjust padding for smaller screens */
+    padding: 1em;/* Adjust padding for smaller screens */
+    height: 9em;
     align-items: center;
     background-color: #CE0033;
 }
@@ -43,6 +44,13 @@ header {
     outline: none;
 }
 
+
+.fa-circle-plus {
+    font-size: 4em !important;
+    cursor: pointer;
+    margin: 1em 0 0.7em 0; ; 
+}
+
 a {
     color: #ffffff;
     text-decoration: none;
@@ -57,6 +65,7 @@ a:hover {
 /* main section */
 .title {
     padding: 2em 0;
+    cursor: context-menu;
 }
 
 main {
@@ -86,12 +95,6 @@ th {
     padding: 1em;
 }
 
-.fa-circle-plus {
-    font-size: 4em !important;
-    margin-top: 1em !important;
-    cursor: pointer;
-}
-
 .fa-solid,
 .fa-eye {
     cursor: pointer;
@@ -99,11 +102,13 @@ th {
 
 @media (max-width: 600px) {
     header {
-        flex-direction: column;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     .logout {
-        width: 80%;
+        width: 25%;
         max-width: none;
         height: 3em;
         font-size: 1em;
@@ -124,6 +129,10 @@ th {
     .futur-talents-school {
         height: auto;
         margin-bottom: 1em;
+        display: none;
+    }
+    .fa-circle-plus{
+        margin-top: 1em !important;
     }
 }
 

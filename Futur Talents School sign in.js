@@ -49,3 +49,9 @@ submit.addEventListener("click",(e)=> {
     }
     
 });
+
+// if the user is already logged in 
+
+if (sessionStorage.getItem("currentUser")!== null) {
+    window.location.href="./sudent inter face/futur-talents-school student main.html";
+}

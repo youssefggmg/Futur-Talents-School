@@ -42,11 +42,12 @@ form>div{
     padding: 1em 0 1em 0;
     display: flex;
     justify-content: center;
-    /* align-items: center; */
+    align-items: center;
     justify-content: space-around;
+    flex-direction: column;
 }
 input{
-    width: 50%;
+    width: 80%;
     border-radius: 25px;
     height: 3em;
     padding: 0 2em 0 2em;
@@ -58,6 +59,7 @@ input{
 }
 label{
     color: #CE0033;
+    margin-bottom: 1em;
 }
 #fullname{
     margin-left: 5em;
@@ -113,7 +115,7 @@ a{
     input,
     button,
     label {
-        width: 100%; /* Make form elements full-width on mobile */
+        width: 70%; /* Make form elements full-width on mobile */
         margin-right: 7px; /* Remove left margin on mobile */
     }
 
@@ -121,5 +123,10 @@ a{
         margin: 1em 0 1em 0;
         width: 50%;
         max-width: 200px;
+    }
+    header{
+        text-align: center;
+        width: 70%;
+        margin: -5em 0 -5em 0;
     }
 }

@@ -17,6 +17,11 @@ profile.addEventListener('mouseover', (e) => {
     profile.setAttribute("title", userAcount.fullname);
 });
 
+// check if the user is logged in or not
+if (userAcount===null) {
+    window.location.replace("../Futur Talents School sign in.html");
+}
+
 // Logout to sign in page 
 logoutbutton.addEventListener("click", (e) => {
     e.preventDefault();

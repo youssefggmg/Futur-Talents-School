@@ -19,12 +19,13 @@ select , input, textarea {
     width: 20em;
     margin: 2em 0 2em 0;
     padding-left: 2em ;
+    padding-left: 1em;
 }
 select{
-    width: 24em;
+    width: 20em;
 }
 textarea{
-    width: 22em;
+    width: 20em;
     height: 7em;
 }
 input{

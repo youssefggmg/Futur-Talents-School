@@ -83,7 +83,10 @@ td, th{
 @media (max-width: 600px) {
     /* header adjustments for small screens */
     header {
-        flex-direction: column;
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
     
     .futur-talents-school {
